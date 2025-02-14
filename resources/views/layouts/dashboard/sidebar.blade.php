@@ -85,22 +85,22 @@
         <ul class="menu-sub">
           <li class="menu-item">
             <a href="{{route('kategori.index')}}" class="menu-link">
-              <div data-i18n="Without menu">Kaegori</div>
+              <div data-i18n="Without menu">Kategori</div>
             </a>
           </li>
           <li class="menu-item">
-            <a href="layouts-without-navbar.html" class="menu-link">
-              <div data-i18n="Without navbar">Without navbar</div>
+            <a href="{{ route('genre.index') }}" class="menu-link">
+              <div data-i18n="Without navbar">Genre</div>
             </a>
           </li>
           <li class="menu-item">
-            <a href="layouts-container.html" class="menu-link">
-              <div data-i18n="Container">Container</div>
+            <a href="{{ route('film.index')}}" class="menu-link">
+              <div data-i18n="Container">Film</div>
             </a>
           </li>
           <li class="menu-item">
-            <a href="layouts-fluid.html" class="menu-link">
-              <div data-i18n="Fluid">Fluid</div>
+            <a href="{{ route('review.index')}}" class="menu-link">
+              <div data-i18n="Fluid">Review</div>
             </a>
           </li>
           <li class="menu-item">
