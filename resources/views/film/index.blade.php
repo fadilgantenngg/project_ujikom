@@ -20,6 +20,7 @@
                 <th>Tahun Rilis</th>
                 <th>Director</th>
                 <th>Rating</th>
+                <th>Poster</th>
                 <th>Aksi</th>
             </tr>
         </thead>
@@ -32,6 +33,10 @@
                     <td>{{ $film->release_year }}</td>
                     <td>{{ $film->director }}</td>
                     <td>{{ $film->rating }}</td>
+                    <td>
+                        <img src="{{ asset('/storage/films/' . $film->poster) }}" class="rounded"
+                            style="width: 150px">
+                    </td>
                     <td>
                         <a href="{{ route('film.edit', $film->id) }}" class="btn btn-warning">Edit</a>
                         <form action="{{ route('film.destroy', $film->id) }}" method="POST" class="d-inline">

@@ -101,6 +101,7 @@
                   <span class="app-brand-text demo text-body fw-bolder">Sneat</span>
                 </a>
               </div>
+              
               <h4 class="mb-2">Welcome Back! 👋</h4>
               <p class="mb-4">Sign in to continue</p>
               <form id="formAuthentication" class="mb-3" action="{{route('login')}}" method="POST">

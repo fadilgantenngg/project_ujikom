@@ -2,9 +2,20 @@
 
 namespace App\Models;
 
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class genre extends Model
+class Genre extends Model
 {
-    protected $guarded = [];
+    use HasFactory;
+
+    protected $fillable = ['name'];
+
+    /**
+     * Relasi ke model Film
+     */
+    public function films()
+    {
+        return $this->hasMany(Film::class);
+    }
 }

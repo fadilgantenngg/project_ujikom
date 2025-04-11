@@ -7,7 +7,7 @@ use App\Http\Controllers\FilmController;
 use App\Http\Controllers\ReviewController;
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('frontend');
 });
 
 Auth::routes(['register' =>false]);
