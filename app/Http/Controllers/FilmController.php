@@ -15,6 +15,7 @@ class FilmController extends Controller
     {
         $films = Film::with('genre')->get();
         return view('film.index', compact('films'));
+     
     }
 
     /**
